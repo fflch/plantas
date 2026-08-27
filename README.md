@@ -7,4 +7,4 @@ Figuras:
 Convertendo pdfs para svg sem bordas:
 
     ./pdf2svg.sh
-    python3 crops
+    python3 crops.py

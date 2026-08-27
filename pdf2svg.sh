@@ -18,7 +18,8 @@ find originais -type f -name "*.pdf" | while read -r pdf; do
     echo "Convertendo e recortando: $pdf -> $target_svg"
     
     # Executa o Inkscape convertendo para SVG e ajustando o recorte da página
-    inkscape --export-area-drawing --export-margin=10 --export-filename="$target_svg" "$pdf"
+    #inkscape --export-area-drawing --export-margin=10 --export-filename="$target_svg" "$pdf"
+    inkscape --export-filename="$target_svg" "$pdf"
 done
 
 echo "Conversão concluída!"
